@@ -9,9 +9,8 @@ const customJestConfig = {
   setupFilesAfterEnv: ['./jest.setup.js'],
   moduleNameMapper: {
     // Handle module aliases (this will be automatically configured for you soon)
-    '^@/(.*)$': '<rootDir>/src/$1',
-
-    '^@/public/(.*)$': '<rootDir>/public/$1',
+    '^src/(.*)$': '<rootDir>/src/$1',
+    '^public/(.*)$': '<rootDir>/public/$1',
   },
   collectCoverage: true,
   collectCoverageFrom: [
